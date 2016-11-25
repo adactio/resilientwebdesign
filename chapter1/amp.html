@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title>Resilient Web Design—Chapter 1</title>
+<meta name="description" content="Foundations" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@adactio" />
+<meta name="twitter:creator" content="@adactio" />
+<meta name="twitter:title" property="og:title" content="Resilient Web Design—Chapter 1" />
+<meta name="twitter:description" property="og:description" content="Chapter One: Foundations" />
+<meta name="twitter:url" property="og:url" content="https://resilientwebdesign.com/chapter1/" />
+<meta name="twitter:image" property="og:image" content="https://resilientwebdesign.com/chapter1/images/medium/sir-tim-berners-lee.jpg" />
+<link rel="canonical" href="https://resilientwebdesign.com/chapter1/" />
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/etbookot-roman-webfont.woff2') format('woff2'),
+         url('../fonts/etbookot-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/etbookot-italic-webfont.woff2') format('woff2'),
+         url('../fonts/etbookot-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/etbookot-bold-webfont.woff2') format('woff2'),
+         url('../fonts/etbookot-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: 'et-book', Georgia, serif;
+    font-weight: normal;
+    font-variant-ligatures: common-ligatures;
+    font-variant-numeric: oldstyle-nums;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+@media all and (min-width: 30em) {
+    body {
+        line-height: 1.55;
+    }
+}
+@media all and (min-width: 40em) {
+    body {
+        line-height: 1.6;
+    }
+}
+@media all and (min-width: 50em) {
+    body {
+        line-height: 1.65;
+    }
+}
+@media all and (min-width: 60em) {
+    body {
+        line-height: 1.7;
+    }
+}
+@media all and (min-width: 70em) {
+    body {
+        line-height: 1.75;
+    }
+}
+a {
+   text-decoration: none;
+   transition: all 0.25s;
+}
+a:link,
+a:visited {
+    background-color: transparent;
+    color: rgba(204,0,0,0.9);
+}
+a:hover,
+a:focus {
+    background-color: rgba(204,0,0,0.9);
+    border-color: rgba(204,0,0,0.9);
+    color: white;
+}
+amp-img {
+    border: none;
+    max-width: 100%;
+}
+abbr,
+code.markup.element,
+code.markup.attribute {
+    text-decoration: none;
+    font-family: inherit;
+    font-variant: all-small-caps;
+}
+pre {
+    color: rgba(0,0,0,0.75);
+    white-space: pre-wrap;
+    margin: 1em;
+}
+sup {
+    vertical-align: top;
+}
+i,
+em,
+cite {
+    font-style: italic;
+}
+b,
+strong {
+    font-weight: bold;
+}
+p {
+    margin: 2em 0;
+}
+ul,
+ol {
+    margin: 2em 0;
+    padding: 0;
+}
+li {
+    margin: 1em 0;
+    padding: 0;
+}
+h1 {
+    font-size: calc( 36px + (144 - 36) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+h2 {
+    font-size: calc( 24px + (48 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.125;
+    margin: 6rem 0 0;
+}
+h3 {
+    font-size: calc( 20px + (40 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 4rem 0 0;
+}
+h4 {
+    font-size: calc( 18px + (36 - 18) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.325;
+    margin: 3rem 0 0;
+}
+h5 {
+    font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 2rem 0 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 2em;
+    padding: 0;
+}
+blockquote p:first-child,
+blockquote p:last-child {
+    position: relative;
+}
+blockquote p:first-child::before,
+blockquote p:last-child::after {
+    font-style: normal;
+    font-size: 4em;
+    line-height: 1;
+    color: rgba(0,0,0,0.25);
+    position: absolute;
+}
+blockquote p:first-child::before {
+    content: '“';
+    top: -0.125em;
+    left: -0.5em;
+}
+blockquote p:last-child::after {
+    content: '”';
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em -1em;
+}
+figcaption {
+    font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font: caption;
+    color: captionText;
+    margin: 1em;
+}
+figcaption small {
+    font-size: inherit;
+    display: block;
+}
+
+header {
+    padding: 5vh 1em;
+    background-color: rgba(95,121,149,1);
+    color: white;
+}
+header hgroup {
+    min-height: 90vh;
+}
+header hgroup h1::first-line {
+    font-size: 1.25em;
+}
+header hgroup,
+header > a {
+    display: block;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+header > a {
+    font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    height: 0.8em;
+    line-height: 1;
+}
+header a:link,
+header a:visited,
+header a:hover,
+header a:focus {
+    color: inherit;
+    background-color: inherit;
+}
+
+main {
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh 1em;
+}
+main > h1 {
+    letter-spacing: 0.025em;
+    min-height: calc(40vh - 0.25em);
+    border-bottom: 0.25em solid rgba(95,121,149,0.5);
+}
+main > h1 span {
+    display: block;
+    font-size: 0.5em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    margin-bottom: 1em;
+}
+main > p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-size: calc( 24px + (48 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+main > p:first-of-type::first-letter {
+    display: inline-block;
+    vertical-align: text-top;
+}
+main > p:first-of-type cite {
+    white-space: pre;
+}
+
+section {
+    min-height: 100vh;
+}
+
+nav a {
+    display: block;
+    padding: 5vh 1em;
+}
+nav cite span {
+    font-style: normal;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+}
+nav a[rel="next"] {
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+nav a[rel="next"] cite {
+    letter-spacing: 0.05em;
+    font-style: normal;
+}
+nav a[rel="next"] cite span {
+    display: block;
+}
+</style>
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+</head>
+<body>
+
+<header>
+<a href="../">Resilient Web Design</a>
+</header>
+
+<main>
+
+<h1><span>Chapter 1:</span> Foundations</h1>
+
+<p>The history of human civilisation is a tale of cumulative effort. Each generation builds upon the work of their forebears. Sometimes the work takes a backward step. Sometimes we wander down dead ends. But we struggle on. Bit by bit our species makes progress. Whether the progress is incremental or a huge leap forward, it is always borne upon the accomplishments of those who came before us.</p>
+
+<p>Nowhere is this layered nature of progress more apparent than in the history of technology. Even the most dramatic bounds in technological advancement are only possible when there is some groundwork to build upon.</p>
+
+<p>Gutenberg’s printing press would not have been invented if it weren’t for the work already done in creating the screw press used for winemaking. Technologies aren’t created in isolation. They are imprinted with the ghosts of their past.</p>
+
+<p>The layout of the <abbr>QWERTY</abbr> keyboard for your computer—and its software equivalent on your phone—is an echo of the design of the first generation of typewriters. That arrangement of keys was chosen to reduce the chances of mechanical pieces of metal clashing as they sprang forward to leave their mark on the paper.</p>
+
+<p>The hands on a clock face move in a clockwise direction only because that’s the direction that the shadow cast by a sundial moves over the course of a day in the northern hemisphere. Had history turned out differently, with the civilisation of the southern hemisphere in the ascendent, then the hands on our clocks would today move in the opposite direction. As for why those clocks carve out the time in periods of 24 hours, each with 60 minutes, with each minute having 60 seconds, that’s thanks to an ancient Sumerian civilisation. They hit upon using the number 60 as their base for counting and commerce. It’s the lowest number that can be equally divided by the first six numbers. That sexagesimal way of counting is still with us today in the hours, minutes, and seconds that we use as conceptual models for subdividing one rotation of our planet.</p>
+
+<figure>
+<amp-img src="images/small/sundial.jpg" alt="A sundial on a plinth." srcset="images/medium/sundial.jpg 2x, images/large/sundial.jpg 3x" width="400" height="400">
+</amp-img>
+<figcaption>The shadow cast by a sundial in the southern hemisphere moves counter‐clockwise.</figcaption>
+</figure>
+
+<p>These echoes of the past reverberate in the present even when their usefulness has been outlived. You’ll still sometimes see a user interface that displays an icon of a Compact Disc or vinyl record to represent music. That same interface might use the image of a 3½ inch floppy disk to represent the concept of saving data. The reason why floppy disks wound up being 3½ inches in size is because the disk was designed to fit into a shirt pocket. The icons in our software interfaces are whispering stories to us from the history of clothing and fashion.</p>
+
+<section aria-labelledby="letssharewhatweknow">
+
+<h2 id="letssharewhatweknow">Let’s share what we know</h2>
+
+<p>Scientific progress would be impossible without a shared history of learning to build upon. As Sir Isaac Newton put it, if we have seen further it is by standing on the shoulders of giants.</p>
+
+<p>When knowledge is passed from one generation to the next, theories become more refined, units of measurement become standardised, and experiments increase in precision.</p>
+
+<p>Right now humanity’s most precise experiments are being conducted beneath the border between Switzerland and France. This is the home of <abbr>CERN</abbr>, the European Organisation for Nuclear Research. In the 16‐mile wide ring of its Large Hadron Collider, protons are being smashed together at velocities approaching the speed of light. Our primate species is recreating the conditions from the start of our universe. The <abbr>LHC</abbr> is the most complex piece of machinery that has ever been built.</p>
+
+<p>The awe‐inspiring engineering of the <abbr>LHC</abbr> is matched by the unprecedented levels of international co‐operation behind <abbr>CERN</abbr>. The particle accelerator became operational in the first decade of the 21<sup>st</sup> century but the groundwork was laid more than half a century before. That was when a group of nations came together to create the <abbr>CERN</abbr> Convention, dedicating resources and money towards pure scientific research. The only return on investment they expected was in the currency of knowledge.</p>
+
+<p>This groundwork created a unique environment free from the constraints of national, economic, and social hierarchies. Nobel prize‐winning physicists collaborate with students on summer internships. If there is an element of social categorisation at <abbr>CERN</abbr>, it is only between theorists and experimentalists. The theorists are the ones with blackboards in their offices. The experimentalists are the ones with computers. They have to deal with a lot of data. Even before the Large Hadron Collider was switched on, managing information was a real challenge at <abbr>CERN</abbr>.</p>
+
+<p>Enter Tim Berners‐Lee, a computer scientist from England who found himself working at <abbr>CERN</abbr> in the 1980s. At the beginning of that decade, he started a personal project to get to grips with managing information. The resulting software was called <abbr>ENQUIRE</abbr>, named for a Victorian manual of domestic life called <em>Enquire Within Upon Everything</em>.</p>
+
+<figure>
+<amp-img src="images/small/enquire-within-upon-everything.jpg" alt="The spine of a book." srcset="images/medium/enquire-within-upon-everything.jpg 2x, images/large/enquire-within-upon-everything.jpg 3x" width="300" height="400">
+</amp-img>
+<figcaption>Enquire Within Upon Everything</figcaption>
+</figure>
+
+<p>By the end of the ’80s, Tim Berners‐Lee was ready to tackle the thorny problem of information management on a larger scale. In order to get buy‐in at <abbr>CERN</abbr>, he produced an unassuming document with the title <em>Information Management: A Proposal</em>. Fortunately his supervisor, Mike Sendall, recognised the potential of the idea and gave the go‐ahead by scrawling the words “vague but exciting” across the top of the paper. That proposal would become the World Wide Web.</p>
+
+<figure>
+<amp-img src="images/small/vague-but-exciting.jpg" alt="A sheet of printed paper with some hand‐written words at the top." srcset="images/medium/vague-but-exciting.jpg 2x, images/large/vague-but-exciting.jpg 3x" width="400" height="300">
+</amp-imt>
+<figcaption>Vague but exciting…</figcaption>
+</figure>
+
+</section>
+
+<section aria-labelledby="netvalue">
+
+<h2 id="netvalue">Net value</h2>
+
+<p>Today we think of the World Wide Web as one of the greatest inventions in the history of communication, but to the scientists at <abbr>CERN</abbr> it is merely a byproduct. When you’re dealing in cosmological timescales and investigating the very building blocks of reality itself, the timeline of humanity’s relationship with technology is little more than a rounding error.</p>
+
+<p>When Tim Berners‐Lee decided to take on the problem of information management at <abbr>CERN</abbr>, the internet was already established as part of the infrastructure there. This network of networks was first created in the 1960s and the early adopters were universities and scientific institutions.</p>
+
+<p>These nodes were already physically connected via telephone wires. Rather than build an entirely new network from scratch, it made sense to reuse what was already there. Once again, a new technology was only made possible by the existence of an older one. In the nineteenth century the world was technologically terraformed for the telegraph. Through astonishing feats of engineering, our planet was wired up with undersea cables. Those same cables would later be repurposed to carry telephone signals. Later again, they would carry the digital ones and zeros of the internet. Today those signals are transmitted via pulses of light travelling through fibre‐optic cables. Those fibre‐optic cables follow the same paths across the ocean floor as their telegraphic antecedents.</p>
+
+<figure>
+<amp-img src="images/small/submarine-cable-map.jpg" alt="A map of undersea cables." srcset="images/medium/submarine-cable-map.jpg 2x, images/large/submarine-cable-map.jpg 3x" width="417" height="300">
+</amp-img>
+<figcaption>Telegeography publish a new map of undersea cables every year.</figcaption>
+</figure>
+
+<p>The internet has no centre. This architectural decision gives the network its robustness. You may have heard that the internet was designed to resist a nuclear attack. That’s not entirely correct. It’s true that the project began with military considerations. The initial research was funded by <abbr>DARPA</abbr>, the Defense Advanced Research Projects Agency. But the engineers working on the project were not military personnel. Their ideals had more in common with the free‐speech movement than with the military‐industrial complex. They designed the network to route around damage, but the damage they were concerned with was censorship, not a nuclear attack.</p>
+
+<p>The open architecture of the internet reflected the liberal worldview of its creators. As well as being decentralised, the internet was also deliberately designed to be a dumb network. That’s its secret sauce. The protocols underlying the transmission of data on the internet—<abbr>TCP/IP</abbr>—describe how packets of data should be moved around, but those protocols care not a whit for the contents of the packets. That allows the internet to be the transport mechanism for all sorts of applications: email, Telnet, <abbr>FTP</abbr>, and eventually the World Wide Web.</p>
+
+</section>
+
+<section aria-labelledby="hyperspace">
+
+<h2 id="hyperspace">Hyperspace</h2>
+
+<p>The web uses <abbr>HTTP</abbr>, the HyperText Transfer Protocol, to send and receive data. This data is uniquely identified with a <abbr>URL</abbr>. Many of these <abbr>URL</abbr>s identify pages made of <abbr>HTML</abbr>, the HyperText Markup Language. The killer feature of the web lies here in <abbr>HTML</abbr>’s humble <code class="markup element">A</code> element. The A stands for Anchor. Its <code class="markup attribute">HREF</code> attribute allows you to cast off from within one <abbr>URL</abbr> out to another <abbr>URL</abbr>, creating a link that can be traversed from one page to the other. These links turn the web from being a straightforward storage and retrieval system into a hypertext system.</p>
+
+<p>Tim Berners‐Lee did not invent hypertext. That term was coined by Ted Nelson, a visionary computer scientist who was working on his own hypertext system called Xanadu. Both Ted Nelson and Tim Berners‐Lee were influenced by the ideas set out by Vannevar Bush in his seminal 1945 essay, <cite>As We May Think</cite>. Bush, no doubt, was in turn influenced by the ideas of Belgian informatician Paul Otlet. Each one of these giants in the history of hypertext was standing on the shoulders of the giants that had come before them. Giants all the way down.</p>
+
+<p>Compared to previous grand visions of hypertext, links on the web are almost laughably simplistic. There is no two‐way linking. If you link to another <abbr>URL</abbr>, but the page at that <abbr>URL</abbr> is moved or destroyed, you have no way of knowing.</p>
+
+<p>But the simplicity of the web turned out to be the secret of its success.</p>
+
+<p>Tim Berners‐Lee assumed that most <abbr>URL</abbr>s would point to non‐<abbr>HTML</abbr> resources; word‐processing documents, spreadsheets, and all sorts of other computer files. <abbr>HTML</abbr> could then be used to create simple index pages that point to these files using links. Because <abbr>HTML</abbr> didn’t need to do very much, it had a limited vocabulary. That made it relatively easy to learn. To Tim Berners‐Lee’s surprise, people began to create fully‐fledged documents in <abbr>HTML</abbr>. Instead of creating content in other file formats and using <abbr>HTML</abbr> to link them up, people began writing content directly in <abbr>HTML</abbr>.</p>
+
+</section>
+
+<section aria-labelledby="markmeupmarkmedown">
+
+<h2 id="markmeupmarkmedown">Mark me up, mark me down</h2>
+
+<p><abbr>HTML</abbr> wasn’t the first markup language to be used at <abbr>CERN</abbr>. Scientists there were already sharing documents written in a flavour of <abbr>SGML</abbr>—Standard Generalized Markup Language. Tim Berners‐Lee took this existing vocabulary from <abbr>CERN</abbr> <abbr>SGML</abbr> and used it as a starting point for his new markup language. Once again, it made sense to build on what people were already familiar with rather than creating something from scratch.</p>
+
+<p>The first version of <abbr>HTML</abbr> contained a grand total of 21 elements. Many of those elements are still with us today—<code class="markup element">TITLE</code>, <code class="markup element">P</code>, <code class="markup element">UL</code>, <code class="markup element">LI</code>, <code class="markup element">H1</code>, <code class="markup element">H2</code>, etc., and of course, the <code class="markup element">A</code> element. Others have fallen by the wayside—<code class="markup element">ISINDEX</code>, <code class="markup element">PLAINTEXT</code>, <code class="markup element">LISTING</code>, <code class="markup element">HP1</code>, <code class="markup element">HP2</code>, etc., as well as a proprietary element called <code class="markup element">NEXTID</code> that only made sense if you were using a computer running the NeXTSTEP operating system. That’s the <abbr>OS</abbr> that Tim Berners‐Lee was using when he created <abbr>HTTP</abbr>, <abbr>HTML</abbr>, and the world’s first web browser, called confusingly WorldWideWeb, which only worked on NeXT machines.</p>
+
+<p>To demonstrate the power and interoperability of the web, a cross‐platform browser was needed; one that anybody could install and use, no matter what operating system they were using. The task of building that browser fell to an undergraduate at <abbr>CERN</abbr> named Nicola Pellow. She created the Line Mode Browser. It was simple but powerful. It didn’t have the same level of interactivity as the WorldWideWeb browser, but the fact that it could be run on any machine meant that the web was now accessible to everyone.</p>
+
+<figure>
+<amp-img src="images/small/line-mode-browser.jpg" alt="Close up of a screen of green text on a black background." srcset="images/medium/line-mode-browser.jpg 2x, images/large/line-mode-browser.jpg 3x" width="400" height="300">
+</amp-img>
+<figcaption>The Line Mode Browser in action.</figcaption>
+</figure>
+
+<p>As soon as there were two web browsers in the world, interoperability and backwards compatibility became important issues. For instance, what should the Line Mode Browser do when it encounters an <abbr>HTML</abbr> element it doesn’t understand, such as <code class="markup element">NEXTID</code>?</p>
+
+<p>The answer can be found in the sparse documentation that Tim Berners‐Lee wrote for his initial collection called <cite><abbr>HTML</abbr> Tags</cite>. Under the heading “Next <abbr>ID</abbr>” he wrote:</p>
+
+<blockquote>
+<p>Browser software may ignore this tag.</p>
+</blockquote>
+
+<p>This seemingly innocuous decision would have far‐reaching consequences for the future of the World Wide Web.</p>
+
+<figure>
+<amp-img src="images/small/sir-tim-berners-lee.jpg" alt="Tim Berners‐Lee, smiling." srcset="images/medium/sir-tim-berners-lee.jpg 2x, images/large/sir-tim-berners-lee.jpg 3x" width="400" height="300">
+</amp-img>
+<figcaption>Sir Tim Berners‐Lee.
+<small>Photograph by Paul Clark.</small>
+<small>Licensed under a Creative Commons Attribution‐ShareAlike 4.0 International license.</small></figcaption>
+</figure>
+
+</section>
+
+<aside>
+<h2>References</h2>
+<ol>
+<li><a href="https://www.w3.org/History/1989/proposal.html"><cite>Information Management: A proposal</cite></a> by Tim Berners-Lee</li>
+<li><a href="https://www.telegeography.com/telecom-maps/index.html">Telecom Maps</a> by TeleGeography</li>
+<li><a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/"><cite>As We May Think</cite></a> by Vannevar Bush</li>
+<li><a href="http://info.cern.ch/hypertext/WWW/MarkUp/Tags.html">HTML Tags</a></li>
+</ol>
+</aside>
+
+</main>
+
+<nav>
+<a href="../chapter2/amp.html" rel="next"><cite><span>Chapter 2:</span> Materials</cite></a>
+</nav>
+
+<amp-install-serviceworker src="../serviceworker.js" data-iframe-src="https://resilientwebdesign.com/iframe.html" layout="nodisplay">
+</amp-install-serviceworker>
+
+</body>
+</html>

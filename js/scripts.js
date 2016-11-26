@@ -1,3 +1,28 @@
+'use strict';
+
+// update URL hash when text is selected
+(function (win, doc) {
+    // cut the mustard
+    if (!win.getSelection || !encodeURIComponent) {
+        return;
+    }
+    function updateURL() {
+        var selection = win.getSelection();
+        if (selection) {
+            var selectedText = selection.toString();
+            if (selectedText.length > 1) {
+                var hash = '#' + encodeURIComponent(selectedText);
+                if(win.history && win.history.pushState) {
+                    win.history.pushState(null, null, hash);
+                } else if (win.location && win.location.hash) {
+                    win.location.hash = hash;
+                }
+            }
+        }
+    }
+    doc.body.addEventListener('mouseup', updateURL, false);
+    doc.body.addEventListener('touchend', updateURL, false);
+})(window, window.document);
 
 // detect native/existing fragmention support
 if (!('fragmention' in window.location)) (function () {

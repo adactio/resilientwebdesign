@@ -221,11 +221,6 @@ figure {
     align-items: center;
     margin: 2em -1em;
 }
-@media all and (orientation: portrait) {
-    figure img {
-        max-height: 50vh;
-    }
-}
 figcaption {
     font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1200 - 320) ));

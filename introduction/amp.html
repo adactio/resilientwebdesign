@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+<meta charset="utf-8" />
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title>Resilient Web Design—Introduction</title>
+<meta name="description" content="Introduction" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@adactio" />
+<meta name="twitter:creator" content="@adactio" />
+<meta name="twitter:title" property="og:title" content="Resilient Web Design—Introduction" />
+<meta name="twitter:description" property="og:description" content="Introduction" />
+<meta name="twitter:url" property="og:url" content="https://resilientwebdesign.com/introduction/" />
+<meta name="twitter:image" property="og:image" content="https://resilientwebdesign.com/author/images/medium/jeremykeith.jpg" />
+<link rel="canonical" href="https://resilientwebdesign.com/introduction/" />
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/etbookot-roman-webfont.woff2') format('woff2'),
+         url('../fonts/etbookot-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/etbookot-italic-webfont.woff2') format('woff2'),
+         url('../fonts/etbookot-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'et-book';
+    src: url('../fonts/etbookot-bold-webfont.woff2') format('woff2'),
+         url('../fonts/etbookot-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: 'et-book', Georgia, serif;
+    font-weight: normal;
+    font-variant-ligatures: common-ligatures;
+    font-variant-numeric: oldstyle-nums;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+@media all and (min-width: 30em) {
+    body {
+        line-height: 1.55;
+    }
+}
+@media all and (min-width: 40em) {
+    body {
+        line-height: 1.6;
+    }
+}
+@media all and (min-width: 50em) {
+    body {
+        line-height: 1.65;
+    }
+}
+@media all and (min-width: 60em) {
+    body {
+        line-height: 1.7;
+    }
+}
+@media all and (min-width: 70em) {
+    body {
+        line-height: 1.75;
+    }
+}
+a {
+   text-decoration: none;
+   transition: all 0.25s;
+}
+a:link,
+a:visited {
+    background-color: transparent;
+    color: rgba(204,0,0,0.9);
+}
+a:hover,
+a:focus {
+    background-color: rgba(204,0,0,0.9);
+    border-color: rgba(204,0,0,0.9);
+    color: white;
+}
+amp-img {
+    border: none;
+    max-width: 100%;
+}
+abbr,
+code.markup.element,
+code.markup.attribute {
+    text-decoration: none;
+    font-family: inherit;
+    font-variant: all-small-caps;
+}
+pre {
+    color: rgba(0,0,0,0.75);
+    white-space: pre-wrap;
+    margin: 1em;
+}
+sup {
+    vertical-align: top;
+}
+i,
+em,
+cite {
+    font-style: italic;
+}
+b,
+strong {
+    font-weight: bold;
+}
+p {
+    margin: 2em 0;
+}
+ul,
+ol {
+    margin: 2em 0;
+    padding: 0;
+}
+li {
+    margin: 1em 0;
+    padding: 0;
+}
+h1 {
+    font-size: calc( 36px + (144 - 36) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+h2 {
+    font-size: calc( 24px + (48 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.125;
+    margin: 6rem 0 0;
+}
+h3 {
+    font-size: calc( 20px + (40 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 4rem 0 0;
+}
+h4 {
+    font-size: calc( 18px + (36 - 18) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.325;
+    margin: 3rem 0 0;
+}
+h5 {
+    font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 2rem 0 0;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 2em;
+    padding: 0;
+}
+blockquote p:first-child,
+blockquote p:last-child {
+    position: relative;
+}
+blockquote p:first-child::before,
+blockquote p:last-child::after {
+    font-style: normal;
+    font-size: 4em;
+    line-height: 1;
+    color: rgba(0,0,0,0.25);
+    position: absolute;
+}
+blockquote p:first-child::before {
+    content: '“';
+    top: -0.125em;
+    left: -0.5em;
+}
+blockquote p:last-child::after {
+    content: '”';
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em -1em;
+}
+figcaption {
+    font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font: caption;
+    color: captionText;
+    margin: 1em;
+}
+figcaption small {
+    font-size: inherit;
+    display: block;
+}
+
+header {
+    padding: 5vh 1em;
+    background-color: rgba(95,121,149,1);
+    color: white;
+}
+header hgroup {
+    min-height: 90vh;
+}
+header hgroup h1::first-line {
+    font-size: 1.25em;
+}
+header hgroup,
+header > a {
+    display: block;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+header > a {
+    font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    height: 0.8em;
+    line-height: 1;
+}
+header a:link,
+header a:visited,
+header a:hover,
+header a:focus {
+    color: inherit;
+    background-color: inherit;
+}
+
+main {
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vh 1em;
+}
+main > h1 {
+    letter-spacing: 0.025em;
+    min-height: calc(40vh - 0.25em);
+    border-bottom: 0.25em solid rgba(95,121,149,0.5);
+}
+main > h1 span {
+    display: block;
+    font-size: 0.5em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+    margin-bottom: 1em;
+}
+main > p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-size: calc( 24px + (48 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    line-height: 1.25;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+main > p:first-of-type cite {
+    white-space: pre;
+}
+
+section {
+    min-height: 100vh;
+}
+
+nav a {
+    display: block;
+    padding: 5vh 1em;
+}
+nav cite span {
+    font-style: normal;
+    font-size: 0.8em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.3em;
+}
+nav a[rel="next"] {
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+nav a[rel="next"] cite {
+    letter-spacing: 0.05em;
+    font-style: normal;
+}
+nav a[rel="next"] cite span {
+    display: block;
+}
+</style>
+<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+</head>
+<body>
+
+<header>
+<a href="../">Resilient Web Design</a>
+</header>
+
+
+<main>
+
+<h1>Introduction</h1>
+
+<p>With a title like <cite>Resilient Web Design</cite>, you might think that this is a handbook for designing robust websites. This is not a handbook. It’s more like a history book.</p>
+
+<p>Marshall McLuhan once said:</p>
+
+<blockquote>
+<p>We look at the present through a rear-view mirror. We march backwards into the future.</p>
+</blockquote>
+
+<p>But in the world of web design, we are mostly preoccupied with the here and now. When we think beyond our present moment, it is usually to contemplate the future—to imagine the devices, features, and interfaces that don’t yet exist. We don't have time to look back upon our past, and yet the history of web design is filled with interesting ideas.</p>
+
+<p>The World Wide Web has been around for long enough now that we can begin to evaluate the twists and turns of its evolution. I wrote this book to highlight some of the approaches to web design that have proven to be resilient. I didn’t do this purely out of historical interest (although I am fascinated by the already rich history of our young industry). In learning from the past, I believe we can better prepare for the future.</p>
+
+<p>You won’t find any code in here to help you build better websites. But you will find ideas and approaches. Ideas are more resilient than code. I’ve tried to combine the most resilient ideas from the history of web design into an approach for building the websites of the future.</p>
+
+<p>I hope you will join me in building a web that lasts; a web that’s resilient.</p>
+
+</main>
+
+<nav>
+<a href="../chapter1/amp.html" rel="next"><cite><span>Chapter 1:</span> Foundations</cite></a>
+</nav>
+
+<amp-install-serviceworker src="../serviceworker.js" data-iframe-src="https://resilientwebdesign.com/iframe.html" layout="nodisplay">
+</amp-install-serviceworker>
+
+</body>
+</html>

@@ -254,7 +254,7 @@ figcaption small {
 }
 
 header {
-    padding: 5vh 1em;
+    padding: 1em;
     background-color: rgba(95,121,149,1);
     color: white;
 }
@@ -265,7 +265,7 @@ header {
     }
 }
 header hgroup {
-    min-height: 90vh;
+    min-height: calc(100vh - 2em);
 }
 header hgroup h1::first-line {
     font-size: 1.25em;
@@ -296,11 +296,11 @@ main {
     max-width: 25em;
     margin-left: auto;
     margin-right: auto;
-    padding: 5vh 1em;
+    padding: 1em;
 }
 main > h1 {
     letter-spacing: 0.025em;
-    min-height: calc(40vh - 0.25em);
+    min-height: 2em;
     border-bottom: 0.25em solid rgba(95,121,149,0.5);
 }
 main > h1 span {
@@ -328,9 +328,6 @@ main > p:first-of-type cite {
     white-space: pre;
 }
 
-section {
-    min-height: 100vh;
-}
 @media print {
     section {
         page-break-before: always;
@@ -354,7 +351,7 @@ aside li a {
 
 nav a {
     display: block;
-    padding: 5vh 1em;
+    padding: 1em;
 }
 nav cite span {
     font-style: normal;

@@ -329,10 +329,6 @@ main > p:first-of-type::first-line {
     letter-spacing: 0.1em;
     text-align: justify;
 }
-main > p:first-of-type::first-letter {
-    display: inline-block;
-    vertical-align: text-top;
-}
 main > p:first-of-type cite {
     white-space: pre;
 }

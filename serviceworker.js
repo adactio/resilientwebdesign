@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v0.01::';
+const version = 'v0.02::';
 const staticCacheName = version + 'static';
 
 function updateStaticCache() {
@@ -89,6 +89,7 @@ function updateStaticCache() {
             return cache.addAll([
                 '/',
                 '/offline/',
+                '/introduction/',
                 '/chapter1/',
                 '/chapter2/',
                 '/chapter3/',

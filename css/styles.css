@@ -140,7 +140,7 @@ ol {
     padding: 0;
 }
 li {
-    margin: 1em 0;
+    margin: 1em;
     padding: 0;
 }
 @media print {

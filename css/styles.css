@@ -390,10 +390,11 @@ nav li:not(:last-child) {
     border-bottom: 1px dotted rgba(0,0,0,0.2);
 }
 nav li cite {
+    display: block;
+    display: flex;
     max-width: 25em;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
 }

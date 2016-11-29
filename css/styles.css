@@ -77,7 +77,7 @@ body {
 }
 a {
    text-decoration: none;
-   transition: all 0.25s;
+   transition: color 0.25s, background-color 0.25s;
 }
 a:link,
 a:visited {

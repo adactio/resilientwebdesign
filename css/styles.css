@@ -254,6 +254,7 @@ figcaption small {
 }
 
 header {
+    display: block;
     padding: 1em;
     background-color: rgba(95,121,149,1);
     color: white;
@@ -293,6 +294,7 @@ header a:focus {
 }
 
 main {
+    display: block;
     max-width: 25em;
     margin-left: auto;
     margin-right: auto;
@@ -349,6 +351,9 @@ aside li a {
     }
 }
 
+nav {
+    display: block;
+}
 nav a {
     display: block;
     padding: 1em;
@@ -405,6 +410,7 @@ nav li li cite {
 }
 
 footer {
+    display: block;
     background-color: black;
     color: white;
     padding: 1em;

@@ -300,6 +300,10 @@ main {
     margin-right: auto;
     padding: 1em;
 }
+main ::selection {
+    background-color: rgba(95,121,149,1);
+    color: white;
+}
 main > h1 {
     letter-spacing: 0.025em;
     min-height: 2em;

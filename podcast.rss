@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title>Resilient Web Design</title>
+        <author>Jeremy Keith</author>
+        <description>A web book by Jeremy Keith.</description>
+        <copyright>Licensed under a Creative Commons Attribution‐ShareAlike 4.0 International License.</copyright>
+        <image>
+            <title>Resilient Web Design</title>
+            <link>https://resilientwebdesign.com</link>
+            <url>http://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png</url>
+        </image>
+        <language>en</language>
+        <link>https://resilientwebdesign.com</link>
+        <atom:link href="https://resilientwebdesign.com/podcast.rss" rel="self" type="application/rss+xml" />
+        <itunes:author>Jeremy Keith</itunes:author>
+        <itunes:subtitle>A web book by Jeremy Keith.</itunes:subtitle>
+        <itunes:summary>The podcast of the web book by Jeremy Keith.</itunes:summary>
+        <itunes:owner>
+            <itunes:name>Jeremy Keith</itunes:name>
+            <itunes:email>jeremy@adactio.com</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Technology" />
+        <itunes:category text="Arts">
+            <itunes:category text="Design" />
+        </itunes:category>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
+        <item>
+            <title>Introduction</title>
+            <description>With a title like  Resilient Web Design, you might think that this is a handbook for designing robust websites. This is not a handbook. It’s more like a history book.</description>
+            <guid>https://resilientwebdesign.com/introduction/</guid>
+            <link>https://resilientwebdesign.com/introduction/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/introduction.mp3" type="audio/mpeg" length="1834626" />
+            <pubDate>Sun, 4 Dec 2016 12:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/author/images/medium/jeremykeith.jpg" />
+            <itunes:duration>01:54</itunes:duration>
+        </item>
+    </channel>
+</rss>

@@ -2,7 +2,6 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
         <title>Resilient Web Design</title>
-        <author>Jeremy Keith</author>
         <description>A web book by Jeremy Keith.</description>
         <copyright>Licensed under a Creative Commons Attribution‐ShareAlike 4.0 International License.</copyright>
         <image>

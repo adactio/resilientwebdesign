@@ -135,12 +135,22 @@ self.addEventListener('fetch', event => {
     // Look in the cache first, fall back to the network
     event.respondWith(
         caches.match(request)
-            .then(response => {
-                // CACHE
-                return response || fetch(request)
-                    .then( response => {
+            .then(responseFromCache => {
+                // CACHE//
+                // Meanwhile fetch a fresh copy from the network.
+                fetch(request)
+                    .then( responseFromFetch => {
+                        // Stash the fresh version of this page in the cache.
+                        caches.open(staticCacheName)
+                            .then( cache => {
+                                cache.put(request, responseFromFetch);
+                            });
+                    });
+                // Display the (possibly stale) version from the cache.
+                return responseFromCache || fetch(request)
+                    .then( responseFromFetch => {
                         // NETWORK
-                        return response;
+                        return responseFromFetch;
                     })
                     .catch( () => {
                         // OFFLINE

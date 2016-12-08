@@ -30,12 +30,12 @@
             <description>With a title like  Resilient Web Design, you might think that this is a handbook for designing robust websites. This is not a handbook. It’s more like a history book.</description>
             <guid>https://resilientwebdesign.com/introduction/</guid>
             <link>https://resilientwebdesign.com/introduction/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/introduction.mp3" type="audio/mpeg" length="1834626" />
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/introduction.mp3" type="audio/mpeg" length="1012612" />
             <pubDate>Sun, 4 Dec 2016 12:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
             <itunes:image href="https://resilientwebdesign.com/author/images/medium/jeremykeith.jpg" />
-            <itunes:duration>01:54</itunes:duration>
+            <itunes:duration>01:53</itunes:duration>
         </item>
     </channel>
 </rss>

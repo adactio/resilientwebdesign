@@ -453,13 +453,13 @@ footer a:focus {
     text-align: center;
 }
 #font-tools button {
-    margin: 0 .5vw;
+    margin: 0 1vw;
     color: #000;
     border: none;
-    padding: .2vw 2vw;
+    padding: .2vw .5vw;
     background: transparent;
     border: 2px solid transparent;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 .black #font-tools button {
     color: #fff;

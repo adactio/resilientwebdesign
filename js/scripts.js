@@ -128,6 +128,7 @@ if (!('fragmention' in window.location)) (function () {
     parent.insertBefore(tools, parent.firstChild);
     function changeFont(size) {
         document.body.style.fontSize = size + '%';
+        document.querySelector('#font-tools .reset').innerText = size + '%';
         window.localStorage.fontsize = size;
     }
     var size = +window.localStorage.fontsize || 100;

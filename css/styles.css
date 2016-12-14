@@ -446,3 +446,52 @@ footer a:focus {
         display: none;
     }
 }
+
+#font-tools {
+    margin: -10px 0 10px 0;
+    color: #ccc;
+    text-align: center;
+}
+#font-tools button {
+    margin: 0 .5vw;
+    color: #000;
+    border: none;
+    padding: .2vw 2vw;
+    background: transparent;
+    border: 2px solid transparent;
+    font-size: 3vw;
+}
+.black #font-tools button {
+    color: #fff;
+}
+#font-tools button.white {
+    background: white;
+    color: #333;
+}
+#font-tools button.black {
+    background: black;
+    color: #f8f8f8;
+}
+#font-tools button.sand {
+    background: #e6d7a7;
+    color: #333;
+}
+main.sand {
+    background: #e6d7a7;
+    color: #333;
+}
+main.black {
+    background: #222;
+    color: #f8f8f8;
+}
+main.white {
+    background: #fff;
+    color: #000;
+}
+
+@media print {
+    #font-tools {
+        display: none;
+    }
+}
+

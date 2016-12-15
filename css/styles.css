@@ -31,7 +31,17 @@
 }
 
 html {
-    font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 16px + (48 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+}
+@media all and (max-width: 320px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media all and (min-width: 1200px) {
+    html {
+        font-size: 48px;
+    }
 }
 body {
     background-color: white;
@@ -149,34 +159,68 @@ li {
     }
 }
 h1 {
-    font-size: calc( 36px + (144 - 36) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 36px + (180 - 36) * ( (100vw - 320px) / ( 1200 - 320) ));
     font-weight: normal;
     line-height: 1;
     margin: 0;
 }
 h2 {
-    font-size: calc( 24px + (48 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
     font-weight: normal;
     line-height: 1.125;
     margin: 6rem 0 0;
 }
 h3 {
-    font-size: calc( 20px + (40 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 20px + (60 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
     font-weight: normal;
     line-height: 1.25;
     margin: 4rem 0 0;
 }
 h4 {
-    font-size: calc( 18px + (36 - 18) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 18px + (54 - 18) * ( (100vw - 320px) / ( 1200 - 320) ));
     font-weight: normal;
     line-height: 1.325;
     margin: 3rem 0 0;
 }
 h5 {
-    font-size: calc( 16px + (32 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 16px + (48 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
     font-weight: normal;
     line-height: 1.5;
     margin: 2rem 0 0;
+}
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+}
+@media all and (min-width: 1200px) {
+    h1 {
+        font-size: 180px;
+    }
+    h2 {
+        font-size: 72px;
+    }
+    h3 {
+        font-size: 60px;
+    }
+    h4 {
+        font-size: 54px;
+    }
+    h5 {
+        font-size: 48px;
+    }
 }
 @media print {
     h1,h2,h3,h4,h5 {
@@ -325,10 +369,20 @@ main > h1 span {
 }
 main > p:first-of-type::first-line {
     font-variant: small-caps;
-    font-size: calc( 24px + (48 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
     line-height: 1.25;
     letter-spacing: 0.1em;
     text-align: justify;
+}
+@media all and (max-width: 320px) {
+    main > p:first-of-type::first-line {
+        font-size: 24px;
+    }
+}
+@media all and (min-width: 1200px) {
+    main > p:first-of-type::first-line {
+        font-size: 72px;
+    }
 }
 main > p:first-of-type cite {
     white-space: pre;

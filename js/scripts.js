@@ -1,5 +1,18 @@
 'use strict';
 
+function getElementsByText(scope, text) {
+    // iterate descendants of scope
+    for (var all = scope.childNodes, index = 0, element, list = []; (element = all[index]); ++index) {
+        // conditionally return element containing visible, whitespace-insensitive, case-sensitive text (a match)
+        if (element.nodeType === 1 && (element.innerText || element.textContent || '').replace(/\s+/g, ' ').indexOf(text) !== -1) {
+            list = list.concat(getElementsByText(element, text));
+        }
+    }
+
+    // return scope (no match)
+    return list.length ? list : scope;
+}
+
 // update URL hash when text is selected
 (function (win, doc) {
     // cut the mustard
@@ -9,9 +22,18 @@
     function updateURL() {
         var selection = win.getSelection();
         if (selection) {
-            var selectedText = selection.toString();
+            var selectedText = selection.toString(),
+                selectedNode = selection.anchorNode && selection.anchorNode.parentElement;
             if (selectedText.length > 1) {
                 var hash = '#' + encodeURIComponent(selectedText);
+
+                var elements = getElementsByText(document, selectedText),
+                    which = elements.indexOf(selectedNode);
+
+                if (which > 0) {
+                    hash += '++' + which;
+                }
+
                 if(win.history && win.history.pushState) {
                     win.history.pushState(null, null, hash);
                 } else if (win.location && win.location.hash) {
@@ -30,19 +52,6 @@ if (!('fragmention' in window.location)) (function () {
     location.fragmention = location.fragmention || '';
 
     // return first element in scope containing case-sensitive text
-    function getElementsByText(scope, text) {
-        // iterate descendants of scope
-        for (var all = scope.childNodes, index = 0, element, list = []; (element = all[index]); ++index) {
-            // conditionally return element containing visible, whitespace-insensitive, case-sensitive text (a match)
-            if (element.nodeType === 1 && (element.innerText || element.textContent || '').replace(/\s+/g, ' ').indexOf(text) !== -1) {
-                list = list.concat(getElementsByText(element, text));
-            }
-        }
-
-        // return scope (no match)
-        return list.length ? list : scope;
-    }
-
     // on dom ready or hash change
     function onHashChange() {
         // do nothing if the dom is not ready

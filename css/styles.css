@@ -31,7 +31,7 @@
 }
 
 html {
-    font-size: calc( 16px + (48 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 16px + (40 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
 }
 @media all and (max-width: 320px) {
     html {
@@ -40,7 +40,7 @@ html {
 }
 @media all and (min-width: 1200px) {
     html {
-        font-size: 48px;
+        font-size: 40px;
     }
 }
 body {

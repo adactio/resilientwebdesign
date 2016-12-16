@@ -31,14 +31,14 @@
 }
 
 html {
-    font-size: calc( 16px + (40 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 16px + (40 - 16) * ( (100vw - 320px) / ( 1600 - 320) ));
 }
 @media all and (max-width: 320px) {
     html {
         font-size: 16px;
     }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1600px) {
     html {
         font-size: 40px;
     }
@@ -159,31 +159,31 @@ li {
     }
 }
 h1 {
-    font-size: calc( 36px + (180 - 36) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 36px + (180 - 36) * ( (100vw - 320px) / ( 1600 - 320) ));
     font-weight: normal;
     line-height: 1;
     margin: 0;
 }
 h2 {
-    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1600 - 320) ));
     font-weight: normal;
     line-height: 1.125;
     margin: 6rem 0 0;
 }
 h3 {
-    font-size: calc( 20px + (60 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 20px + (60 - 20) * ( (100vw - 320px) / ( 1600 - 320) ));
     font-weight: normal;
     line-height: 1.25;
     margin: 4rem 0 0;
 }
 h4 {
-    font-size: calc( 18px + (54 - 18) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 18px + (54 - 18) * ( (100vw - 320px) / ( 1600 - 320) ));
     font-weight: normal;
     line-height: 1.325;
     margin: 3rem 0 0;
 }
 h5 {
-    font-size: calc( 16px + (48 - 16) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 16px + (48 - 16) * ( (100vw - 320px) / ( 1600 - 320) ));
     font-weight: normal;
     line-height: 1.5;
     margin: 2rem 0 0;
@@ -205,7 +205,7 @@ h5 {
         font-size: 16px;
     }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1600px) {
     h1 {
         font-size: 180px;
     }
@@ -267,7 +267,7 @@ figure {
 }
 figcaption {
     font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320) ));
     font: caption;
     color: captionText;
     margin: 1em;
@@ -369,7 +369,7 @@ main > h1 span {
 }
 main > p:first-of-type::first-line {
     font-variant: small-caps;
-    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1200 - 320) ));
+    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1600 - 320) ));
     line-height: 1.25;
     letter-spacing: 0.1em;
     text-align: justify;
@@ -379,7 +379,7 @@ main > p:first-of-type::first-line {
         font-size: 24px;
     }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1600px) {
     main > p:first-of-type::first-line {
         font-size: 72px;
     }

@@ -7,7 +7,7 @@
         <image>
             <title>Resilient Web Design</title>
             <link>https://resilientwebdesign.com</link>
-            <url>http://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png</url>
+            <url>https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png</url>
         </image>
         <language>en</language>
         <link>https://resilientwebdesign.com</link>
@@ -26,8 +26,20 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 1: Foundations</title>
+            <description>The history of human civilisation is a tale of cumulative effort. Each generation builds upon the work of their forebears. Sometimes the work takes a backward step. Sometimes we wander down dead ends. But we struggle on. Bit by bit our species makes progress. Whether the progress is incremental or a huge leap forward, it is always borne upon the accomplishments of those who came before us.</description>
+            <guid>https://resilientwebdesign.com/chapter1/</guid>
+            <link>https://resilientwebdesign.com/chapter1/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter1.mp3" type="audio/mpeg" length="6933213" />
+            <pubDate>Fri, 16 Dec 2016 09:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter1/images/medium/sir-tim-berners-lee.jpg" />
+            <itunes:duration>14:13</itunes:duration>
+        </item>
+        <item>
             <title>Introduction</title>
-            <description>With a title like  Resilient Web Design, you might think that this is a handbook for designing robust websites. This is not a handbook. It’s more like a history book.</description>
+            <description>With a title like Resilient Web Design, you might think that this is a handbook for designing robust websites. This is not a handbook. It’s more like a history book.</description>
             <guid>https://resilientwebdesign.com/introduction/</guid>
             <link>https://resilientwebdesign.com/introduction/</link>
             <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/introduction.mp3" type="audio/mpeg" length="1012612" />

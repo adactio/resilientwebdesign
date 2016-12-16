@@ -1,5 +1,16 @@
 'use strict';
 
+if ('serviceWorker' in navigator) {
+    // If service workers are supported
+    navigator.serviceWorker.register('/serviceworker.js');
+} else if ('applicationCache' in window) {
+    // Otherwise inject an iframe to use appcache
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', '/appcache.html');
+    iframe.setAttribute('style', 'width: 0; height: 0; border: 0');
+    document.querySelector('footer').appendChild(iframe);
+}
+
 function getElementsByText(scope, text) {
     // iterate descendants of scope
     for (var all = scope.childNodes, index = 0, element, list = []; (element = all[index]); ++index) {

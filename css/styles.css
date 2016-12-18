@@ -31,16 +31,12 @@
 }
 
 html {
-    font-size: calc( 16px + (40 - 16) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 1em; /* 16px @ root em of 1 */
+    font-size: calc( 1em + (2.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
-@media all and (max-width: 320px) {
+@media all and (min-width: 100em) {
     html {
-        font-size: 16px;
-    }
-}
-@media all and (min-width: 1600px) {
-    html {
-        font-size: 40px;
+        font-size: 2.5em; /* 40px @ root em of 1, 40/16 (root em is 1 the fluid root) */
     }
 }
 body {
@@ -159,67 +155,55 @@ li {
     }
 }
 h1 {
-    font-size: calc( 36px + (180 - 36) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 2.25em; /* 36px @ root em of 1 (36/16) */
+    font-size: calc( 2.25em + (11.25 - 2.25) * ( (100vw - 20em) / ( 100 - 20) ));
     font-weight: normal;
     line-height: 1;
     margin: 0;
 }
 h2 {
-    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 1.5em; /* 24px @ root em of 1 (24/16) */
+    font-size: calc( 1.5em + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
     font-weight: normal;
     line-height: 1.125;
     margin: 6rem 0 0;
 }
 h3 {
-    font-size: calc( 20px + (60 - 20) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 1.25em; /* 20px @ root em of 1 (20/16) */
+    font-size: calc( 1.25em + (3.75 - 1.25) * ( (100vw - 20em) / ( 100 - 20) ));
     font-weight: normal;
     line-height: 1.25;
     margin: 4rem 0 0;
 }
 h4 {
-    font-size: calc( 18px + (54 - 18) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 1.125em; /* 18px @ root em of 1 (18/16) */
+    font-size: calc( 1.125em + (3.375 - 1.125) * ( (100vw - 20em) / ( 100 - 20) ));
     font-weight: normal;
     line-height: 1.325;
     margin: 3rem 0 0;
 }
 h5 {
-    font-size: calc( 16px + (48 - 16) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 1em; /* 16px @ root em of 1 (16/16) */
+    font-size: calc( 1em + (3 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
     font-weight: normal;
     line-height: 1.5;
     margin: 2rem 0 0;
 }
-@media all and (max-width: 320px) {
+@media all and (min-width: 100em) {
     h1 {
-        font-size: 36px;
+        font-size: 4.5em; /* 180px @ root em of 2.5 (180/40) */
     }
     h2 {
-        font-size: 24px;
+        font-size: 1.8em; /* 72px @ root em of 2.5 (72/40) */
     }
     h3 {
-        font-size: 20px;
+        font-size: 1.5em; /* 60px @ root em of 2.5 (60/40) */
     }
     h4 {
-        font-size: 18px;
+        font-size: 1.35em; /* 54px @ root em of 2.5 (54/40) */
     }
     h5 {
-        font-size: 16px;
-    }
-}
-@media all and (min-width: 1600px) {
-    h1 {
-        font-size: 180px;
-    }
-    h2 {
-        font-size: 72px;
-    }
-    h3 {
-        font-size: 60px;
-    }
-    h4 {
-        font-size: 54px;
-    }
-    h5 {
-        font-size: 48px;
+        font-size: 1.2em; /* 48px @ root em of 2.5 (48/40) */
     }
 }
 @media print {
@@ -267,10 +251,17 @@ figure {
 }
 figcaption {
     font-family: Futura, 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 0.8125em; /* 13px @ root em of 1 (13/16) */
+    font-size: calc( 0.8125em + (1.625 - 0.8125) * ( (100vw - 20em) / ( 100 - 20) ));
     font: caption;
     color: captionText;
     margin: 1em;
+}
+@media all and (min-width: 100em) {
+    figcaption {
+        font-size: 0.650em; /* 26px @ root em of 2.5 (26/40) */
+        font: caption;
+    }
 }
 figcaption small {
     font-size: inherit;
@@ -369,19 +360,15 @@ main > h1 span {
 }
 main > p:first-of-type::first-line {
     font-variant: small-caps;
-    font-size: calc( 24px + (72 - 24) * ( (100vw - 320px) / ( 1600 - 320) ));
+    font-size: 1.5em; /* 24px @ root em of 1 (24/16) */
+    font-size: calc( 1.5 + (4.5 - 1.5) * ( (100vw - 20em) / ( 100 - 20) ));
     line-height: 1.25;
     letter-spacing: 0.1em;
     text-align: justify;
 }
-@media all and (max-width: 320px) {
+@media all and (min-width: 100em) {
     main > p:first-of-type::first-line {
-        font-size: 24px;
-    }
-}
-@media all and (min-width: 1600px) {
-    main > p:first-of-type::first-line {
-        font-size: 72px;
+        font-size: 1.8em; /* 72px @ root em of 2.5 (72/40) */
     }
 }
 main > p:first-of-type cite {

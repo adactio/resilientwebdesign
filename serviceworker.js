@@ -3,7 +3,7 @@
 // Import Jake's polyfill for async waitUntil
 importScripts('/js/async-waituntil.js');
 
-const version = 'v0.029::';
+const version = 'v0.030::';
 const staticCacheName = version + 'static';
 
 function updateStaticCache() {

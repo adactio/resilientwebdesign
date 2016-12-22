@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+
+import re
+from urllib.parse import unquote
+
+# Load in the existing text
+chapter = {}
+for n in range(0, 8):
+    d = 'index' if n == 0 else 'chapter%d' % n
+    with open('%s/index.html' % d, encoding='utf-8') as fp:
+        chapter[n] = fp.read()
+
+# Loop through index, put in IDs in the chapters
+for line in filter(lambda x: '<li>' in x, chapter[0].split('\n')):
+    m = re.match('<li><a href="../chapter(\d)/#([^"]*)">.*?</a></li>$', line)
+    n, ref = int(m.group(1)), m.group(2)
+    chapter[n] = re.sub(
+        '(' + re.escape(unquote(ref)).replace('\ ', '[ \u00a0]') + ')',
+        r'<span id="%s">\1</span>' % ref,
+        chapter[n], count=1)
+
+# Output the chapters, and spot any redundant spans (plus headings that have IDs)
+headings = []
+for n in range(1, 8):
+    chapter[n] = re.sub('(<[^h][^>]*)><span( id="[^"]*">.*?)</span>(</[^>]*>)', r'\1\2\3', chapter[n])
+    headings.extend(re.findall('<h2 id="([^"]*)"><span id="([^"]*)">', chapter[n]))
+    chapter[n] = re.sub('(<h[^>]*>)<span id="[^"]*">(.*?)</span>(</[^>]*>)', r'\1\2\3', chapter[n])
+    with open('chapter%d/index.html' % n, 'w', encoding='utf-8') as fp:
+        fp.write(chapter[n])
+
+# Use the existing heading IDs in the index
+for h2, text in headings:
+    chapter[0] = re.sub('#' + re.escape(text), '#' + h2, chapter[0])
+with open('index/index.html', 'w', encoding='utf-8') as fp:
+    fp.write(chapter[0])

@@ -26,6 +26,18 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 2: Materials</title>
+            <description>At the risk of teaching grandmother to suck eggs, I’d like you to think about what happens when a browser parses an HTML element. Take, for example, a paragraph element with some text inside it. There’s an opening P tag, a closing P tag, and between those tags, there’s the text.</description>
+            <guid>https://resilientwebdesign.com/chapter2/</guid>
+            <link>https://resilientwebdesign.com/chapter2/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter2.mp3" type="audio/mpeg" length="7230382" />
+            <pubDate>Mon, 26 Dec 2016 12:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter2/images/medium/zengarden.png" />
+            <itunes:duration>14:50</itunes:duration>
+        </item>
+        <item>
             <title>Chapter 1: Foundations</title>
             <description>The history of human civilisation is a tale of cumulative effort. Each generation builds upon the work of their forebears. Sometimes the work takes a backward step. Sometimes we wander down dead ends. But we struggle on. Bit by bit our species makes progress. Whether the progress is incremental or a huge leap forward, it is always borne upon the accomplishments of those who came before us.</description>
             <guid>https://resilientwebdesign.com/chapter1/</guid>

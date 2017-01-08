@@ -26,6 +26,18 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 3: Visions</title>
+            <description>Design adds clarity. Using colour, typography, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of information and turn it into something that’s easy to use and pleasurable to behold. Like life itself, design can win a small victory against the entropy of the universe, creating pockets of order from the raw materials of chaos.</description>
+            <guid>https://resilientwebdesign.com/chapter3/</guid>
+            <link>https://resilientwebdesign.com/chapter3/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter3.mp3" type="audio/mpeg" length="12436733 " />
+            <pubDate>Sun, 8 Jan 2017 16:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter3/images/medium/book-of-kells.jpg" />
+            <itunes:duration>25:41</itunes:duration>
+        </item>
+        <item>
             <title>Chapter 2: Materials</title>
             <description>At the risk of teaching grandmother to suck eggs, I’d like you to think about what happens when a browser parses an HTML element. Take, for example, a paragraph element with some text inside it. There’s an opening P tag, a closing P tag, and between those tags, there’s the text.</description>
             <guid>https://resilientwebdesign.com/chapter2/</guid>

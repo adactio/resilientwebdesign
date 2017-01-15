@@ -26,11 +26,23 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 4: Languages</title>
+            <description>Jon Postel was one of the engineers working on the ARPANET, the precursor to the internet. He wanted to make sure that the packets—or “datagrams”—being shuttled around the network were delivered in the most efficient way. He came to realise that a lax approach to errors was crucial to effective packet switching.</description>
+            <guid>https://resilientwebdesign.com/chapter4/</guid>
+            <link>https://resilientwebdesign.com/chapter4/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter4.mp3" type="audio/mpeg" length="9369699" />
+            <pubDate>Sun, 15 Jan 2017 16:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter3/images/medium/jon-postel.jpg" />
+            <itunes:duration>19:18</itunes:duration>
+        </item>
+        <item>
             <title>Chapter 3: Visions</title>
             <description>Design adds clarity. Using colour, typography, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of information and turn it into something that’s easy to use and pleasurable to behold. Like life itself, design can win a small victory against the entropy of the universe, creating pockets of order from the raw materials of chaos.</description>
             <guid>https://resilientwebdesign.com/chapter3/</guid>
             <link>https://resilientwebdesign.com/chapter3/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter3.mp3" type="audio/mpeg" length="12436733 " />
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter3.mp3" type="audio/mpeg" length="12436733" />
             <pubDate>Sun, 8 Jan 2017 16:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>

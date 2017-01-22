@@ -26,6 +26,18 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 5: Layers</title>
+            <description>n his classic book  How Buildings Learn Stewart Brand highlights an idea by the British architect Frank Duffy: “A building properly conceived is several layers of longevity.”</description>
+            <guid>https://resilientwebdesign.com/chapter5/</guid>
+            <link>https://resilientwebdesign.com/chapter5/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter5.mp3" type="audio/mpeg" length="6029017" />
+            <pubDate>Sun, 22 Jan 2017 17:30:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter3/images/medium/shearing-layers.jpg" />
+            <itunes:duration>12:20</itunes:duration>
+        </item>
+        <item>
             <title>Chapter 4: Languages</title>
             <description>Jon Postel was one of the engineers working on the ARPANET, the precursor to the internet. He wanted to make sure that the packets—or “datagrams”—being shuttled around the network were delivered in the most efficient way. He came to realise that a lax approach to errors was crucial to effective packet switching.</description>
             <guid>https://resilientwebdesign.com/chapter4/</guid>

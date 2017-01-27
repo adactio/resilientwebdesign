@@ -1,8 +1,8 @@
 {
     "lang": "en",
-    "short_name": "Resilient",
+    "short_name": "Resilience",
     "name": "Resilient Web Design by Jeremy Keith",
-    "description": "A web book on the past, present, and future of web design.",
+    "description": "A web book in seven chapters on the past, present, and future of web design. By Jeremy Keith.",
     "icons": [{
         "src": "/images/icon48.png",
         "sizes": "48x48",

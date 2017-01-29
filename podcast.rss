@@ -26,15 +26,27 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 6: Steps</title>
+            <description>“Always design a thing by considering it in its next larger context”, said the Finnish architect Eliel Saarinen. “A chair in a room, a room in a house, a house in an environment, an environment in a city plan.”</description>
+            <guid>https://resilientwebdesign.com/chapter6/</guid>
+            <link>https://resilientwebdesign.com/chapter6/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter6.mp3" type="audio/mpeg" length="8371072" />
+            <pubDate>Sun, 29 Jan 2017 17:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter6/images/medium/duck.jpg" />
+            <itunes:duration>17:13</itunes:duration>
+        </item>
+        <item>
             <title>Chapter 5: Layers</title>
-            <description>n his classic book  How Buildings Learn Stewart Brand highlights an idea by the British architect Frank Duffy: “A building properly conceived is several layers of longevity.”</description>
+            <description>In his classic book  How Buildings Learn Stewart Brand highlights an idea by the British architect Frank Duffy: “A building properly conceived is several layers of longevity.”</description>
             <guid>https://resilientwebdesign.com/chapter5/</guid>
             <link>https://resilientwebdesign.com/chapter5/</link>
             <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter5.mp3" type="audio/mpeg" length="6029017" />
             <pubDate>Sun, 22 Jan 2017 17:30:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
-            <itunes:image href="https://resilientwebdesign.com/chapter3/images/medium/shearing-layers.jpg" />
+            <itunes:image href="https://resilientwebdesign.com/chapter5/images/medium/shearing-layers.jpg" />
             <itunes:duration>12:20</itunes:duration>
         </item>
         <item>

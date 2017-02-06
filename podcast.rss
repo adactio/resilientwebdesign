@@ -26,6 +26,18 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
         <item>
+            <title>Chapter 7: Challenges</title>
+            <description>The fourth annual conference on hypertext took place in San Antonio, Texas in December 1991. Tim Berners‐Lee’s World Wide Web project was starting to take shape then. Thinking the conference organisers and attendees would appreciate the project, he submitted a proposal to Hypertext ’91. The proposal was rejected.</description>
+            <guid>https://resilientwebdesign.com/chapter7/</guid>
+            <link>https://resilientwebdesign.com/chapter7/</link>
+            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter7.mp3" type="audio/mpeg" length="7110679" />
+            <pubDate>Mon, 6 Feb 2017 17:00:00 GMT</pubDate>
+            <itunes:author>Jeremy Keith</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:image href="https://resilientwebdesign.com/chapter7/images/medium/grace-hopper.jpg" />
+            <itunes:duration>14:35</itunes:duration>
+        </item>
+        <item>
             <title>Chapter 6: Steps</title>
             <description>“Always design a thing by considering it in its next larger context”, said the Finnish architect Eliel Saarinen. “A chair in a room, a room in a house, a house in an environment, an environment in a city plan.”</description>
             <guid>https://resilientwebdesign.com/chapter6/</guid>

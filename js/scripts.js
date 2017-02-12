@@ -134,4 +134,45 @@ if (!('fragmention' in window.location)) (function () {
     document[addEventListener[0]](addEventListener[1] + 'readystatechange', onHashChange);
 
     onHashChange();
+
+    var tools = document.createElement('div');
+    tools.id = 'font-tools';
+    tools.innerHTML = '' +
+        '<button class="size smaller">-</button>' +
+        '<button class="size reset">100</button>' +
+        '<button class="size larger">+</button>' +
+        '<button class="theme white">White</button>' +
+        '<button class="theme sand">Sand</button>' +
+        '<button class="theme black">Black</button>' +
+    '';
+    var parent = document.querySelector('main');
+    parent.insertBefore(tools, parent.firstChild);
+    function changeFont(size) {
+        document.body.style.fontSize = size + '%';
+        document.querySelector('#font-tools .reset').innerText = size + '%';
+        window.localStorage.fontsize = size;
+    }
+    var size = +window.localStorage.fontsize || 100;
+    changeFont(size);
+    function changeTheme(theme) {
+        if (theme) {
+            document.querySelector('main').className = theme;
+            window.localStorage.theme = theme;
+        }
+    }
+    changeTheme(window.localStorage.theme)
+    document.querySelector('#font-tools').addEventListener('click', 
+    function(ev) {
+        ev.preventDefault();
+        var target = ev.target;        
+        if (target.classList.contains('size')) {
+            if (target.classList.contains('larger')) { size += 5; }
+            if (target.classList.contains('smaller')) { size -= 5; }
+            if (target.classList.contains('reset')) { size = 100; }
+            changeFont(size);
+        }
+        if (target.classList.contains('theme')) {
+            changeTheme(target.className.replace('theme ',''));
+        }
+    });
 })();

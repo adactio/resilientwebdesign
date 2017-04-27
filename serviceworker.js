@@ -157,12 +157,11 @@ self.addEventListener('fetch', event => {
                         });
                     })
                 );
+                return responseFromCache
             }
-            return responseFromCache
-            ||
             // NETWORK
             // If the file wasn't in the cache, make a network request
-            fetch(request)
+            return fetch(request)
             .then( responseFromFetch => {
                 // Stash a fresh copy in the cache in the background
                 // (using the async waitUntil polyfill)

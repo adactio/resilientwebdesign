@@ -35,6 +35,10 @@
         "src": "/images/icon300.png",
         "sizes": "300x300",
         "type": "image/png"
+    }, {
+        "src": "/images/icon512.png",
+        "sizes": "512x512",
+        "type": "image/png"
     }],
     "start_url": "/",
     "display": "standalone",

@@ -53,6 +53,12 @@ body {
     margin: 0;
     padding: 0;
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: rgba(255,255,255,0.9);
+    }
+}
 @media print {
     body {
         background-color: transparent;
@@ -99,6 +105,18 @@ a:focus {
     border-color: rgba(204,0,0,0.9);
     color: white;
 }
+@media (prefers-color-scheme: dark) {
+    a:link,
+    a:visited {
+        color: white;
+    }
+    a:hover,
+    a:focus {
+        background-color: rgba(95,121,149,0.2);
+        border-color: rgba(95,121,149,0.3);
+        color: white;
+    }
+}
 picture {
     max-width: 100%
 }
@@ -117,6 +135,11 @@ pre {
     color: rgba(0,0,0,0.75);
     white-space: pre-wrap;
     margin: 1em;
+}
+@media (prefers-color-scheme: dark) {
+    pre {
+        color: white;
+    }
 }
 @media print {
     pre {
@@ -231,6 +254,12 @@ blockquote p:last-child::after {
     line-height: 1;
     color: rgba(0,0,0,0.25);
     position: absolute;
+}
+@media (prefers-color-scheme: dark) {
+    blockquote p:first-child::before,
+    blockquote p:last-child::after {
+        color: rgba(255,255,255,0.30);
+    }
 }
 blockquote p:first-child::before {
     content: '“';
@@ -347,6 +376,12 @@ main ::selection {
     background-color: rgba(95,121,149,1);
     color: white;
 }
+@media (prefers-color-scheme: dark) {
+    main ::selection {
+        background-color: rgba(255,255,255,0.7);
+        color: black;
+    }
+}
 main > h1 {
     letter-spacing: 0.025em;
     min-height: 2em;
@@ -423,6 +458,11 @@ nav a[rel="next"] {
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
+@media (prefers-color-scheme: dark) {
+    nav a[rel="next"] {
+        border-color: rgba(255,255,255,0.7);
+    }
+}
 nav a[rel="next"] cite {
     letter-spacing: 0.05em;
     font-style: normal;
@@ -441,6 +481,11 @@ nav li {
 }
 nav li:not(:last-child) {
     border-bottom: 1px dotted rgba(0,0,0,0.2);
+}
+@media (prefers-color-scheme: dark) {
+    nav li:not(:last-child) {
+        border-bottom-color:rgba(255,255,255,0.2);
+    }
 }
 nav li cite {
     display: block;
@@ -477,6 +522,13 @@ footer > p {
 footer a:link,
 footer a:visited {
     color: rgba(255,51,51,0.9);
+}
+@media (prefers-color-scheme: dark) {
+    footer a:link,
+    footer a:visited {
+        color: white;
+        text-decoration: underline;
+    }
 }
 footer a:hover,
 footer a:focus {

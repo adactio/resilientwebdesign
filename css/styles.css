@@ -346,7 +346,7 @@ header hgroup h1::first-line {
 header hgroup,
 header > a {
     display: block;
-    max-width: 32em;
+    max-width: 28em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -367,7 +367,7 @@ header a:focus {
 
 main {
     display: block;
-    max-width: 32em;
+    max-width: 28em;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -490,7 +490,7 @@ nav li:not(:last-child) {
 nav li cite {
     display: block;
     display: flex;
-    max-width: 32em;
+    max-width: 28em;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -515,7 +515,7 @@ footer {
     padding: 1em;
 }
 footer > p {
-    max-width: 32em;
+    max-width: 28em;
     margin-left: auto;
     margin-right: auto;
 }

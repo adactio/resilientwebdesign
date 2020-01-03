@@ -35,11 +35,11 @@
 
 html {
     font-size: 1em; /* 16px @ root em of 1 */
-    font-size: calc( 1em + (2.5 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
+    font-size: calc( 1em + (2 - 1) * ( (100vw - 20em) / ( 100 - 20) ));
 }
 @media all and (min-width: 100em) {
     html {
-        font-size: 2.5em; /* 40px @ root em of 1, 40/16 (root em is 1 the fluid root) */
+        font-size: 2em; /* 32px @ root em of 1, 32/16 (root em is 1 the fluid root) */
     }
 }
 body {
@@ -217,19 +217,19 @@ h5 {
 }
 @media all and (min-width: 100em) {
     h1 {
-        font-size: 4.5em; /* 180px @ root em of 2.5 (180/40) */
+        font-size: 5.625em; /* 180px @ root em of 2.5 (180/32) */
     }
     h2 {
-        font-size: 1.8em; /* 72px @ root em of 2.5 (72/40) */
+        font-size: 2.25em; /* 72px @ root em of 2.5 (72/32) */
     }
     h3 {
-        font-size: 1.5em; /* 60px @ root em of 2.5 (60/40) */
+        font-size: 1.875em; /* 60px @ root em of 2.5 (60/32) */
     }
     h4 {
-        font-size: 1.35em; /* 54px @ root em of 2.5 (54/40) */
+        font-size: 1.6875em; /* 54px @ root em of 2.5 (54/32) */
     }
     h5 {
-        font-size: 1.2em; /* 48px @ root em of 2.5 (48/40) */
+        font-size: 1.5em; /* 48px @ root em of 2.5 (48/32) */
     }
 }
 @media print {
@@ -296,7 +296,7 @@ figcaption {
 }
 @media all and (min-width: 100em) {
     figcaption {
-        font-size: 0.65em; /* 26px @ root em of 2.5 (26/40) */
+        font-size: 0.8125em; /* 26px @ root em of 2.5 (26/32) */
         font: caption;
     }
 }
@@ -346,7 +346,7 @@ header hgroup h1::first-line {
 header hgroup,
 header > a {
     display: block;
-    max-width: 25em;
+    max-width: 32em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -367,7 +367,7 @@ header a:focus {
 
 main {
     display: block;
-    max-width: 25em;
+    max-width: 32em;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -411,7 +411,7 @@ main > p:first-of-type::first-line {
 }
 @media all and (min-width: 100em) {
     main > p:first-of-type::first-line {
-        font-size: 1.8em; /* 72px @ root em of 2.5 (72/40) */
+        font-size: 2.25em; /* 72px @ root em of 2.5 (72/40) */
     }
 }
 main > p:first-of-type cite {
@@ -490,7 +490,7 @@ nav li:not(:last-child) {
 nav li cite {
     display: block;
     display: flex;
-    max-width: 25em;
+    max-width: 32em;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -515,7 +515,7 @@ footer {
     padding: 1em;
 }
 footer > p {
-    max-width: 25em;
+    max-width: 32em;
     margin-left: auto;
     margin-right: auto;
 }

@@ -291,7 +291,6 @@ figcaption {
     font-size: 0.8125em; /* 13px @ root em of 1 (13/16) */
     font-size: calc( 13px + (26 - 13) * ( (100vw - 320px) / ( 1600 - 320) ));
     font: caption;
-    color: captionText;
     margin: 1em;
 }
 @media all and (min-width: 100em) {

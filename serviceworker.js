@@ -3,7 +3,7 @@
 // Import Jake's polyfill for async waitUntil
 importScripts('/js/async-waituntil.js');
 
-const version = 'v0.044::';
+const version = 'v0.045::';
 const staticCacheName = version + 'static';
 
 function updateStaticCache() {
@@ -102,7 +102,7 @@ function updateStaticCache() {
             '/chapter7/',
             '/author/',
             '/contents/',
-            '/index/',
+            '/theindex/',
             '/css/styles.css',
             '/js/scripts.js',
             '/fonts/etbookot-roman-webfont.woff2'

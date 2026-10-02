@@ -7,7 +7,7 @@
         <image>
             <title>Resilient Web Design</title>
             <link>https://resilientwebdesign.com</link>
-            <url>https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png</url>
+            <url>https://www.dropbox.com/scl/fi/09gbxdipngzybo2rfupdj/artwork.png?rlkey=9i4b8dyb4pgnxjfntym0lmt4z&amp;dl=1</url>
         </image>
         <language>en</language>
         <link>https://resilientwebdesign.com</link>
@@ -24,13 +24,13 @@
             <itunes:category text="Design" />
         </itunes:category>
         <itunes:explicit>no</itunes:explicit>
-        <itunes:image href="https://resilientwebdesign.s3.amazonaws.com/podcast/artwork.png" />
+        <itunes:image href="https://www.dropbox.com/scl/fi/09gbxdipngzybo2rfupdj/artwork.png?rlkey=9i4b8dyb4pgnxjfntym0lmt4z&amp;dl=1" />
         <item>
             <title>Chapter 7: Challenges</title>
             <description>The fourth annual conference on hypertext took place in San Antonio, Texas in December 1991. Tim Berners‐Lee’s World Wide Web project was starting to take shape then. Thinking the conference organisers and attendees would appreciate the project, he submitted a proposal to Hypertext ’91. The proposal was rejected.</description>
             <guid>https://resilientwebdesign.com/chapter7/</guid>
             <link>https://resilientwebdesign.com/chapter7/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter7.mp3" type="audio/mpeg" length="7110679" />
+            <enclosure url="https://www.dropbox.com/scl/fi/qm7zqighvopm9bm71zndp/Chapter7.mp3?rlkey=bfuh507468hogk7dv9163d3za&amp;dl=1" type="audio/mpeg" length="7110679" />
             <pubDate>Mon, 6 Feb 2017 17:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -42,7 +42,7 @@
             <description>“Always design a thing by considering it in its next larger context”, said the Finnish architect Eliel Saarinen. “A chair in a room, a room in a house, a house in an environment, an environment in a city plan.”</description>
             <guid>https://resilientwebdesign.com/chapter6/</guid>
             <link>https://resilientwebdesign.com/chapter6/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter6.mp3" type="audio/mpeg" length="8371072" />
+            <enclosure url="https://www.dropbox.com/scl/fi/v1mtv6l4k8icsifcq4v3x/Chapter6.mp3?rlkey=2eplmh8mbdi53yp4zy7kqnoi2&amp;dl=1" type="audio/mpeg" length="8371072" />
             <pubDate>Sun, 29 Jan 2017 17:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -54,7 +54,7 @@
             <description>In his classic book  How Buildings Learn Stewart Brand highlights an idea by the British architect Frank Duffy: “A building properly conceived is several layers of longevity.”</description>
             <guid>https://resilientwebdesign.com/chapter5/</guid>
             <link>https://resilientwebdesign.com/chapter5/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter5.mp3" type="audio/mpeg" length="6029017" />
+            <enclosure url="https://www.dropbox.com/scl/fi/z2nsc5v7y7xdbo121a6qo/Chapter5.mp3?rlkey=av1370s29x9kuj81e9bbk6v2g&amp;dl=1" type="audio/mpeg" length="6029017" />
             <pubDate>Sun, 22 Jan 2017 17:30:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -66,7 +66,7 @@
             <description>Jon Postel was one of the engineers working on the ARPANET, the precursor to the internet. He wanted to make sure that the packets—or “datagrams”—being shuttled around the network were delivered in the most efficient way. He came to realise that a lax approach to errors was crucial to effective packet switching.</description>
             <guid>https://resilientwebdesign.com/chapter4/</guid>
             <link>https://resilientwebdesign.com/chapter4/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter4.mp3" type="audio/mpeg" length="9369699" />
+            <enclosure url="https://www.dropbox.com/scl/fi/zt55o21i04do8zvfx5dlf/Chapter4.mp3?rlkey=6bgdwgfvxg5b5ey5qykx3j8dq&amp;dl=1" type="audio/mpeg" length="9369699" />
             <pubDate>Sun, 15 Jan 2017 16:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -78,7 +78,7 @@
             <description>Design adds clarity. Using colour, typography, hierarchy, contrast, and all the other tools at their disposal, designers can take an unordered jumble of information and turn it into something that’s easy to use and pleasurable to behold. Like life itself, design can win a small victory against the entropy of the universe, creating pockets of order from the raw materials of chaos.</description>
             <guid>https://resilientwebdesign.com/chapter3/</guid>
             <link>https://resilientwebdesign.com/chapter3/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter3.mp3" type="audio/mpeg" length="12436733" />
+            <enclosure url="https://www.dropbox.com/scl/fi/tww36ockahhejl1ffxzub/Chapter3.mp3?rlkey=w1swi8vexu5ldn02q4p5wl05v&amp;dl=1" type="audio/mpeg" length="12436733" />
             <pubDate>Sun, 8 Jan 2017 16:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -90,7 +90,7 @@
             <description>At the risk of teaching grandmother to suck eggs, I’d like you to think about what happens when a browser parses an HTML element. Take, for example, a paragraph element with some text inside it. There’s an opening P tag, a closing P tag, and between those tags, there’s the text.</description>
             <guid>https://resilientwebdesign.com/chapter2/</guid>
             <link>https://resilientwebdesign.com/chapter2/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter2.mp3" type="audio/mpeg" length="7230382" />
+            <enclosure url="https://www.dropbox.com/scl/fi/6phzrtrgwfwp64967fmj2/Chapter2.mp3?rlkey=w4krnplgkl5wi8zvmzoqkkoq7&amp;dl=1" type="audio/mpeg" length="7230382" />
             <pubDate>Mon, 26 Dec 2016 12:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -102,7 +102,7 @@
             <description>The history of human civilisation is a tale of cumulative effort. Each generation builds upon the work of their forebears. Sometimes the work takes a backward step. Sometimes we wander down dead ends. But we struggle on. Bit by bit our species makes progress. Whether the progress is incremental or a huge leap forward, it is always borne upon the accomplishments of those who came before us.</description>
             <guid>https://resilientwebdesign.com/chapter1/</guid>
             <link>https://resilientwebdesign.com/chapter1/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/Chapter1.mp3" type="audio/mpeg" length="6933213" />
+            <enclosure url="https://www.dropbox.com/scl/fi/chbgv1x6kkiu97ufotqwo/Chapter1.mp3?rlkey=vkxg3fgzwxs78hr1buughe1n0&amp;dl=1" type="audio/mpeg" length="6933213" />
             <pubDate>Fri, 16 Dec 2016 09:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
@@ -114,7 +114,7 @@
             <description>With a title like Resilient Web Design, you might think that this is a handbook for designing robust websites. This is not a handbook. It’s more like a history book.</description>
             <guid>https://resilientwebdesign.com/introduction/</guid>
             <link>https://resilientwebdesign.com/introduction/</link>
-            <enclosure url="https://resilientwebdesign.s3.amazonaws.com/podcast/introduction.mp3" type="audio/mpeg" length="1012612" />
+            <enclosure url="https://www.dropbox.com/scl/fi/pq2ocwtkt950yxvgzbkxv/introduction.mp3?rlkey=6naw9lptsojpecigsmka33je2&amp;dl=1" type="audio/mpeg" length="1012612" />
             <pubDate>Sun, 4 Dec 2016 12:00:00 GMT</pubDate>
             <itunes:author>Jeremy Keith</itunes:author>
             <itunes:explicit>no</itunes:explicit>
